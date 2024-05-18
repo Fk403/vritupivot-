@@ -7,3 +7,12 @@ $(document).ready(function(){
         interval: 3000
     });
 });
+
+// rendre le lien activable
+$(document).ready(function(){
+    $('.navbar-nav .nav-link').on('click', function() {
+        $('.navbar-nav .nav-link').removeClass('active');
+        $(this).addClass('active');
+
+    });
+});

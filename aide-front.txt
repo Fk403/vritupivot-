@@ -1,0 +1,23 @@
+#Insertion des images
+je suggère la création d'une table images qui va contenir tous les images
+dans cette application:(clients, fournisseurs,produits/article, admin,users )
+
+# Table images:
+images(
+    id INT AUTO_INCREMENT NOT null,
+    clientId INT DEFAULT NULL,
+    fournisseurId INT DEFAULT NULL,
+    produitId INT DEFAULT NULL ,
+    adminId INT DEFAULT NULL,
+    userId INT DEFAULT NULL ,
+    titre VARCHAR(100),
+    nom VARCHAR(255),
+    creationDate typeDate
+)
+
+# Une table couleurs rattacher à images, pour dire que chaque image pourra 
+correspondre à une couleur (NB: à reféchir ensemble)
+
+
+
+

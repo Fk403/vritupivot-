@@ -34,6 +34,8 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Poppins", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* PERSONNALISATION */
 }
 
 *,
@@ -2660,20 +2662,21 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #D19C97;
-  border-color: #D19C97;
+  color:var(--secondeCouleur);
+  border-color:var(--secondeCouleur);
 }
 
 .btn-outline-primary:hover {
-  color: #212529;
-  background-color: #D19C97;
-  border-color: #D19C97;
+  color:var(--premiereCouleur);
+  background-color: var(--secondeCouleur);
+  border-color: var(--secondeCouleur);
 }
 
-.btn-outline-primary:focus, .btn-outline-primary.focus {
+/* .btn-outline-primary:focus, .btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(209, 156, 151, 0.5);
-}
+} */
 
+/* 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
   color: #D19C97;
   background-color: transparent;
@@ -2689,7 +2692,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(209, 156, 151, 0.5);
-}
+} */
 
 .btn-outline-secondary {
   color: #EDF1FF;
@@ -6094,13 +6097,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #D19C97 !important;
+  background-color: var(--secondeCouleur) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #c17a74 !important;
+  background-color: var(--premiereCouleur) !important;
 }
 
 .bg-secondary {
@@ -9264,11 +9267,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #D19C97 !important;
+  color: var(--secondeCouleur) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #ba6a62 !important;
+  color: var(--secondeCouleur) !important;
 }
 
 .text-secondary {
@@ -9324,7 +9327,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: black !important;
+  color: var(--secondeCouleur) !important;
 }
 
 .text-body {
@@ -9476,7 +9479,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #D19C97;
+  color: var(--secondeCouleur);
 }
 
 @media (max-width: 991.98px) {
@@ -9556,7 +9559,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .product-item .btn:hover {
-  color: #D19C97 !important;
+  color: var(--secondeCouleur) !important;
 }
 
 .contact-form .help-block ul {
