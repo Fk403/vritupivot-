@@ -14,16 +14,26 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-
+    
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+     <!-- nouvelle importation CSS -->
+     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+     <!-- <link rel="stylesheet" href="css/line-icons.css"> -->
+     <link rel="stylesheet" href="css/style_import.css">
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+     <!-- fin nouvelle importation CSS -->
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+   
     
 </head>
 
@@ -494,11 +504,13 @@
 
 
     <!-- Subscribe Start -->
-    <div class="container-fluid bg-secondary my-5">
+    <section id="about" style="background-image: url(img/cover_3.jpg);" class="container-fluid bg-secondary my-5 bg-cover py-4">
+        <div class="overlay"></div>
         <div class="row justify-content-md-center py-3 px-xl-5">
-            <div class="col-md-6 col-12 py-5">
-                <div class="text-center mb-2 pb-2">
-                    <h2 class="section-title px-5 mb-3"><span class="bg-secondary px-2">Restez Informé</span></h2>
+            <div class="col-md-6 col-12 py-5 section-intro text-center">
+                <div class="text-center mb-2 pb-2 text-white">
+                    <h2 class="h1 px-5 mb-3 text-white"><span class="bg-transparent px-2">Restez Informé</span></h2>
+                    <div class="divider"></div>
                     <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.</p>
                 </div>
                 <form action="">
@@ -511,7 +523,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Subscribe End -->
 
 
@@ -803,7 +815,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="preparation-front/js/custom.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- <script src="js/app.js"></script> -->
 </body>
 
 </html>
